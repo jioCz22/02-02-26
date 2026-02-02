@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    /* Fondo oscuro romántico */
+    background: radial-gradient(circle, #2b0303 0%, #0f0109 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.countdown {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #ff4d6d;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    border: 1px solid rgba(255, 77, 109, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.book {
+    width: 90%;
+    max-width: 400px;
+    margin: 40px auto;
+    /* Tarjeta oscura translúcida */
+    background: rgba(255, 255, 255, 0.07); 
+    backdrop-filter: blur(15px);
+    border-radius: 30px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.page {
+    display: none;
+    width: 100%;
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.page.active {
+    display: block;
+}
+
+.title {
+    font-family: 'Dancing Script', cursive;
+    color: #ff4d6d; /* Rosa neón suave */
+    font-size: 1.8rem;
+    min-height: 80px;
+    text-shadow: 0 0 10px rgba(255, 77, 109, 0.5);
+}
+
+.media-container {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.fade-img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+h2 { color: #ff758f; font-size: 1.4rem; margin-bottom: 10px; }
+/* Texto en gris muy claro para lectura en fondo oscuro */
+p { color: #e0e0e0; line-height: 1.6; font-size: 1rem; font-weight: 300; }
+
+.btn-main, .btn-next {
+    background: #c9184a; /* Rojo vino vibrante */
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(201, 24, 74, 0.4);
+    transition: 0.3s;
+}
+
+.btn-main:hover, .btn-next:hover {
+    transform: scale(1.05);
+    background: #ff4d6d;
+}
+
+.btn-next { margin-top: 20px; padding: 10px 20px; }
+
+.final {
+    margin-top: 25px;
+    color: #ff758f;
+    font-size: 1.2rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+/* Corazones animados ajustados para fondo oscuro */
+.heart {
+    position: fixed;
+    top: -20px;
+    font-size: 20px;
+    user-select: none;
+    pointer-events: none;
+    z-index: 99;
+    opacity: 0.8;
+    animation: fall linear forwards;
+}
+
+@keyframes fall {
+    to { transform: translateY(110vh) rotate(360deg); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}

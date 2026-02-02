@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Historia ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="countdown" id="countdown"></div>
+
+<div class="book">
+    <div class="page active">
+        <h1 id="typewriter" class="title"></h1>
+        <div class="spacer"></div>
+        <button class="btn-main" onclick="nextPage()">Comenzar nuestra historia ❤️</button>
+    </div>
+
+    <div class="page">
+        <h2>Cómo nos conocimos</h2>
+        <p>Un 22 de mayo del 2024 alas 7:29:15 nos conocimos en isla social,
+             por azares del destino pero agradezco a la vida por eso,
+             pues gracias a eso estoy con el amor de mi vida</p>
+        <button class="btn-next" onclick="nextPage()">Siguiente ➔</button>
+    </div>
+
+    <div class="page">
+        <h2>Empezamos a ser novios</h2>
+        <p>Usted fue quien me pidió a mi ser su novio,
+             me lo pidió antes de yo pedírselo eso la hace especial,
+              y por eso me atreví a pedirle matrimonio el 02/11/24 porque se que tuu eres la mujer indicada</p>
+        <button class="btn-next" onclick="nextPage()">Siguiente ➔</button>
+    </div>
+
+    <div class="page">
+        <h2>Nuestra primera llamada - 25/03/2025</h2>
+        <div class="media-container">
+            <img src="img/Imagen de WhatsApp 2025-10-27 a las 08.02.19_1c5f6536.jpg" class="fade-img">
+        </div>
+        <p>Escuchar tu voz fue sentir calma, emoción y felicidad...
+             Fue algo unico que jamas habia sentido un sonido que ame desde el primer momento</p>
+        <button class="btn-next" onclick="nextPage()">Siguiente ➔</button>
+    </div>
+
+    <div class="page">
+        <h2>Primera navidad Juntitos</h2>
+        <p>Quiza no estuvimos juntos uno alado del otro...
+             Pero si estuvimos presentes ese dia y fue grandioso </p>
+        <button class="btn-next" onclick="nextPage()">Siguiente ➔</button>
+    </div>
+
+    <div class="page">
+        <h2>Primer año nuevo juntooos</h2>
+        <div class="media-container">
+            <img src="img/Captura de pantalla 2026-01-30 205931.png" class="fade-img">
+        </div>
+        <p>Jamas olvidare esas grandiosas palabras que me dices y dijiste esa nochesita te amo y muchooooo</p>
+        <button class="btn-next" onclick="nextPage()">Siguiente ➔</button>
+    </div>
+
+    <div class="page">
+        <h2>Dia loquito </h2>
+        <div class="media-container">
+            <img src="img/25-01-26.jpg" class="fade-img">
+        </div>
+        <p>Un dia muy loco y lleno de pendejadas jssjjs amo cuando te expresas y eres tu tu real forma de ser y sin timidez hablamos </p>
+        <button class="btn-next" onclick="nextPage()">Siguiente ➔</button>
+    </div>
+
+    <div class="page">
+        <h2>Un momento bonito</h2>
+        <div class="media-container">
+            <video id="loveVideo" class="fade-img" loop playsinline muted>
+                <source src="img/1añito.mp4" type="video/mp4">
+            </video>
+        </div>
+        <p>Un recuerdo que guardo con cariño en mi corazón.</p>
+        <button class="btn-next" onclick="nextPage()">Siguiente ➔</button>
+    </div>
+
+    <div class="page">
+        <h2>Otro Mesesito Mashhhhh ❤️</h2>
+        <div class="media-container">
+            <video id="loveVideo" class="fade-img" loop playsinline muted>
+                <source src="img/Carita.mp4" type="video/mp4">
+            </video>
+        </div>
+        <p>Gracias por este mes tan bonito. Me haces muy feliz.</p>
+        <h3 class="final">¿Quieres seguir escribiendo toda la vida esta historia conmigo ? 💖</h3>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
